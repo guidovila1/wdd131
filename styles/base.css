@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+header {
+    background-color: white;
+}
+
 #course-title {
     display: block;
     padding: 2rem;
