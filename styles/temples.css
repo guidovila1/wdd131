@@ -57,7 +57,33 @@ main h1 {
     grid-template-columns: 1fr;
     gap: 1rem;
 }
+que hago>?
 
+No te preocupes 😄 — esto no es un error grave, solo un aviso de que tienes el mismo selector .container definido en dos lugares:
+
+1️⃣ Fuera de la media query → para móvil (grid-template-columns: 1fr;)
+2️⃣ Dentro de la media query → para pantallas grandes (grid-template-columns: repeat(3, 1fr);)
+
+En mobile-first esto es totalmente normal y correcto, porque necesitamos:
+
+1 columna en móviles
+
+3 columnas en pantallas grandes
+
+Así que no tienes que eliminar ninguna regla, solo asegúrate de que tus propiedades estén organizadas y claras.
+
+🔹 Qué hacer exactamente
+
+Mantén tu CSS así:
+
+temples.css (móvil)
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
 
 figure {
     background: white;
