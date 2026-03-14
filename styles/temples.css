@@ -20,6 +20,9 @@ header {
     padding: 1rem;
     text-align: center;
 }
+header div{
+    font-size: 30px;
+}
 
 nav {
     margin: left auto;
@@ -43,7 +46,7 @@ nav {
     content: "❌";
 }
 
-header.menu-open h1 {
+header.menu-open div {
     display: none;
     width: 100%;
 }
