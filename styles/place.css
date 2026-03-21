@@ -1,6 +1,6 @@
 :root {
-    --primary-color: rgb(255, 3, 3);
-    --accent-color: rgba(0, 58, 146);
+    --primary-color: rgb(180, 0, 0);
+    --accent-color: rgb(0, 58, 146);
     --text-color: rgb(255, 255, 255);
 }
 
@@ -50,6 +50,7 @@ footer {
 
 .card {
     background-color: #eaeaea;
+    color: #222;
     margin: 1rem auto;
     padding: 1.5rem;
     max-width: 600px;
@@ -63,32 +64,36 @@ footer {
 
 }
 
-
-h2 {
+.card h2 {
+    background-color: var(--accent-color);
+    color: #fff;
     align-self: center;
     justify-self: center;
-    background-color: var(--accent-color);
     padding: 20px;
     width: 100%;
     font-size: 1.8rem;
-
 }
+
+
 
 .weather-icon {
     justify-self: left;
     align-self: center;
-    width: 20%;
+    width: 60px;
+    height: auto;
 
 }
 
 .weather {
-    background-color: var(--accent-color);
+
     display: flex;
     justify-content: space-around;
     grid-column: 1/3;
 
 
 }
+
+
 
 .row {
     grid-column: 1/3;
@@ -107,6 +112,7 @@ h2 {
 .value {
     text-align: left;
 }
+
 h1::after {
     content: " ★";
     color: var(--accent-color);
