@@ -1,4 +1,12 @@
 @media (min-width: 1000px) {
+    .weather img {
+        display: none
+    }
+
+    .weather-section h2::after {
+        content: "⛅";
+    }
+
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -31,9 +39,7 @@
 
     }
 
-   
-
-    .weather-section {
+        .weather-section {
         grid-column: 2;
         top: 110%;
         left: 70%;
