@@ -1,0 +1,21 @@
+@media (min-width: 600px) {
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1;
+        
+    }
+
+
+    .templeContainer {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+}

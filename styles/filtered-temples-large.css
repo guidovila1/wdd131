@@ -1,0 +1,22 @@
+@media (min-width: 1024px) {
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+         flex-direction: row;
+    }
+
+    .navigation a {
+
+        display: block;
+        flex: 1;
+    }
+
+
+    .templeContainer {
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+
+    }
+}
