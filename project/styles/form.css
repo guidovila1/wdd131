@@ -71,7 +71,7 @@ textarea {
 input[type="checkbox"], 
 input[type="radio"] {
     width: auto; 
-    margin: 0;   
+    
 }
 
 button[type="submit"] {
