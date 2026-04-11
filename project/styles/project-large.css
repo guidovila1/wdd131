@@ -1,0 +1,75 @@
+@media (min-width: 1024px) {
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+
+        display: block;
+        flex: 1;
+    }
+
+
+    .energyContainer {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+
+    }
+
+    .sidebar {
+        display: block;
+        width: 250px;
+        height: auto;
+        text-align: center;
+        position: fixed;
+        top:50%;
+        right: 0;
+        background: #36648b;
+        color: white;
+        padding: 20px;
+       
+    }
+    .sidebar nav{
+            display: block;
+            text-align: center;
+            color: white;
+            
+        }
+    .sidebar nav ul {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 0;
+        color: white;
+        list-style: none;
+        
+    }
+    
+    .sidebar nav ul li:hover {
+        background: #0f6fd1;
+        padding: 10px;
+        border-radius: 8px;
+        margin: 10px 0;
+        cursor: pointer;
+    }
+   
+
+    .redirect-btn {
+        align-self: center;
+        height: 50px;
+        padding: 20px 20px;
+        background: #36648b;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .redirect-btn:hover {
+        background: #0f6fd1;
+    }
+   
+ 
+}

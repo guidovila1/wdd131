@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Project-form </title>
+    <meta name="description"
+        content="This is the form page for the WDD 131 class assignment using HTML, CSS, and JavaScript. The form allows users to submit a product review with various input types.">
+    <meta name="author" content="Guido Alejandro Vila Montano">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/project.js" defer></script>
+    <script src="scripts/project-form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/RenewWorldSolution.svg" alt="RenewWorld Solutions Logo" width="85px" height="auto">
+        <div>RenewWorld Solutions</div>
+
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+        <nav class="navigation">
+            <a href="project.html" id="home">Home</a>
+            <a href="project-form.html">Submit Review</a>
+        </nav>
+    </header>
+    <div>
+        <h1>Product Review</h1>
+    </div>
+
+    <main>
+        <form action="project-review.html" method="get">
+            <div class="form-group">
+                <label for="product">What kind of energy do you prefer? </label>
+                <select name="product" id="product" required>
+                    <option value="" disabled selected>Select a Product ... </option>
+
+                </select>
+
+
+            </div>
+
+            <div class="form-group">
+
+                <p>Overall Rating</p>
+                <div class="rating-flex">
+                    <div class="radio-vertical">
+                        <label for="rating1">★</label>
+                        <input type="radio" id="rating1" name="overallRating" value="1" required>
+
+                    </div>
+
+                    <div class="rafting-flex">
+                        <label for="rating2">★★</label>
+                        <input type="radio" id="rating2" name="overallRating" value="2" required>
+
+                    </div>
+                    <div class="rafting-flex">
+                        <label for="rating3">★★★</label>
+                        <input type="radio" id="rating3" name="overallRating" value="3" required>
+
+                    </div>
+                    <div class="rafting-flex">
+                        <label for="rating4">★★★★</label>
+                        <input type="radio" id="rating4" name="overallRating" value="4" required>
+                    </div>
+                    <div class="rafting-flex">
+                        <label for="rating5">★★★★★</label>
+                        <input type="radio" id="rating5" name="overallRating" value="5" required>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <p>
+                    Why do you prefer this energy source?(Check all that apply)
+                </p>
+
+                <input type="checkbox" id="featureradiation" name="features" value="radiation">
+                <label for="featureradiation">High radiation</label>
+
+                <input type="checkbox" id="featurewindflow" name="features" value="windflow">
+                <label for="featurewindflow">High wind flow</label>
+
+                <input type="checkbox" id="featurereability" name="features" value="reliability">
+                <label for="featurereability">High reliability</label>
+
+                <input type="checkbox" id="featurecost" name="features" value="cost">
+                <label for="featurecost">Lower Cost</label>
+            </div>
+
+            <div class="form-group">
+                <label for="review">Written Review (optional)</label>
+                <textarea name="review" id="review" rows="4"></textarea>
+
+
+
+            </div>
+            <div class="form-group">
+                <label for="username">Your Name (optional)</label>
+                <input type="text" id="username" name="username">
+            </div>
+
+
+            <div class="form-group">
+                <button type="submit">Submit Review</button>
+
+            </div>
+        </form>
+
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; <span id="currentyear"></span> | Guido Alejandro Vila Montano | Bolivia
+        </p>
+        <p id="lastModified"></p>
+
+
+    </footer>
+
+</body>
+
+</html>

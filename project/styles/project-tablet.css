@@ -1,0 +1,28 @@
+@media (min-width: 768px) {
+    #menu {
+        display: none;
+    }
+    main{
+        margin: 120px auto;     
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1;
+
+    }
+
+
+    .energyContainer {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
