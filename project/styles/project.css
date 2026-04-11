@@ -104,7 +104,7 @@ header.menu-open .navigation {
 
 main {
     max-width: 900px;
-    margin:auto;
+    margin: 120px auto;
     padding: 20px;
 }
 
@@ -184,7 +184,6 @@ footer {
 
 .h1 {
     text-align: center;
-    margin-top: 100px;
     font-size: 5rem;
     color: #36648b;
 }
